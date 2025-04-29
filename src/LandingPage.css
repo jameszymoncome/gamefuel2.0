@@ -208,6 +208,14 @@
 
   /*Page 1*/
   
+  .bordered-content {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+
   .page1-content {
     font-size: 14px; /* Reduced font size */
     line-height: 1.4;
@@ -226,83 +234,81 @@
 
   /*Page 2*/
   .page2-content {
-    font-size: 16px; /* Match font size with page1-content */
-    line-height: 1.5;
-    overflow-y: auto; /* Allow scrolling if content exceeds height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
   
-  h2 {
-    font-size: 20px; /* Match h2 size with page1-content */
-    margin-bottom: 20px; /* Space between title and content */
-    font-weight: bold;
-  }
-  
-  ul {
-    list-style-type: disc; /* Use disc bullet points */
-    list-style-position: inside;
-    padding-left: 0;
-    margin-top: 10px; /* Add space before the list */
-  }
-  
-  li {
-    margin-bottom: 12px; /* More space between list items */
-    color: #555;
-  }
-  /*Page 3*/
-  .page3-content h2 {
-    font-family: 'Georgia', serif;
-    font-size: 1.4rem;
-    color: #2f4f4f;
+  .page-title {
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    text-align: center;
+    margin-top: -10px; /* Adjust upward */
+    
+  }
+  
+  .page2-image-container {
+    margin: 15px 0;
     text-align: center;
   }
   
-  .page3-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .page2-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
   
-  .page3-content > ul > li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
+  .page2-text {
+    margin-top: -10px;
   }
   
-  /* Top-level bullets */
-  .page3-content > ul > li::before {
-    content: "🍎";
-    position: absolute;
-    left: 0;
-    color: #4caf50;
-    font-size: 1.2rem;
-  }
-  
-  /* Sub-list under Macronutrients and Micronutrients */
-  .page3-content ul ul {
-    margin-top: 10px;
+  .benefits-list {
+    list-style-type: disc;
     padding-left: 20px;
-  }
-  
-  .page3-content ul ul li {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 10px;
     font-size: 1rem;
-    color: #666;
+    line-height: 1.5;
   }
-  
-  /* Sub-bullet */
-  .page3-content ul ul li::before {
-    content: "•"; /* simple small dot */
-    position: absolute;
-    left: 0;
-    color: #888;
-    font-size: 1.2rem;
-  }
+ /* Page 3 Styling - Matches Image Layout */
+.page3-content {
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  color: #000;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f4f4f;
+}
+
+.main-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.main-list > li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.circle-list {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.circle-list li {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+
   
 /*Page 4*/
   
@@ -468,33 +474,40 @@
     color: #2f4f4f;
   }
 
-  /*Page 15*/
-  .page15-content {
-    padding: 10px;
-    height: 100%;
-    overflow: hidden;
-    text-align: left;
-  }
-  
-  .page15-content h2 {
-    font-family: 'Georgia', serif;
-    font-size: 1.3rem;
-    color: #2f4f4f;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .page15-content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .page15-content ul li {
-    font-size: 0.8rem;
-    color: #444;
-    margin-bottom: 8px;
-    line-height: 1.4;
-  }
+  /* Page 15 */
+.page15-content h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.page15-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.page15-content ul li {
+  background-color: #67ae6e; /* Green */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.page15-content ul li:hover {
+  background-color: #67ae6e; /* Darker green on hover */
+}
+
 
   /*Page 16*/
   .page16-content {
@@ -535,33 +548,57 @@
 
   /*Page 17*/
   .page17-content {
-    padding: 10px;
-    height: 100%;
-    overflow: hidden;
-    text-align: left;
+    padding: 20px;
+    text-align: center;
   }
   
   .page17-content h2 {
     font-family: 'Georgia', serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #2f4f4f;
-    text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
   
-  .page17-content ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  .myths-rectangle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
   }
   
-  .page17-content li {
-    font-size: 0.85rem;
-    color: #444;
-    margin-bottom: 8px;
-    line-height: 1.4;
-    padding-left: 1em;
-    text-indent: -1em;
+  .myth-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space between rectangles */
+  }
+  
+  .red-item {
+    background-color: #ffe6e6;
+    border: 2px solid #f44336;
+  }
+  
+  .green-item {
+    background-color: #e6f9e6;
+    border: 2px solid #4caf50;
+  }
+  
+  .myth-item .icon {
+    font-size: 2rem;
+    margin-right: 15px;
+  }
+  
+  .myth-item .text {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
   }
 
   /*Page 18*/
@@ -594,19 +631,39 @@
   }
 
   /*Page 19*/
-  .page19-content {
-    padding: 10px;
-    height: 100%;
-    overflow: hidden;
-    text-align: left;
+  .page19-content h2 {
+    font-size: 1.8rem; /* Adjust font size */
+    text-align: center;
+    color: #ffffff; /* White text */
+    background-color: #328e6e; /* Dark blue background */
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    margin: 20px auto; /* Center the ribbon */
   }
   
-  .page19-content h2 {
-    font-family: 'Georgia', serif;
-    font-size: 1.3rem;
-    color: #2f4f4f;
-    text-align: center;
-    margin-bottom: 12px;
+  /* Add ribbon effect */
+  .page19-content h2::before,
+  .page19-content h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .page19-content h2::before {
+    left: -20px;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #328e6e transparent transparent;
+  }
+  
+  .page19-content h2::after {
+    right: -20px;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #328e6e;
   }
   
   .page19-content ul {
@@ -640,28 +697,48 @@
     margin-bottom: 10px;
   }
   
-  .page20-content h4 {
-    font-family: 'Georgia', serif;
-    font-size: 1rem;
-    color: #556b2f;
-    margin-bottom: 8px;
-  }
+
   
   .page20-content a {
     display: inline-block;
     font-size: 0.85rem;
-    color: #1e90ff;
+    color: #FFFFFF;
     text-decoration: none;
     margin-top: 8px;
     transition: color 0.3s ease;
   }
   
   .page20-content a:hover {
-    color: #104e8b;
+    color: #e1eebc;
     text-decoration: underline;
   }
   
+  .ty {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    text-align: center;
+    color: #2c3e50; /* Optional: Change the color */
+    margin-bottom: 30px;
+  }
+  .download-button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Removes the underline */
+    display: inline-block; /* Ensures proper button styling */
+  }
+  
+  .download-button:hover {
+    background-color:#388e3c;
+  }
 
+  
+
+  
   
 
   

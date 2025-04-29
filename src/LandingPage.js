@@ -48,66 +48,76 @@ function LandingPage() {
         )
       },      
     {
-        type: 'page',
-        content: (
-          <div className="book-page">
-            <div className='page1-content' id='introduction'>
-                <h2>Introduction</h2>
-                    <p>
-                    Welcome to GameFuel, your complete nutrition guide designed to empower
-                    Basud National High School student-athletes. This eBook serves to
-                    provide practical, science-based nutrition advice to help you perform
-                    better, recover faster, and stay healthy. 📖
-                    </p>
-            </div>
-          </div>
-        )
-      },
-    {
-      type: 'page',
-      content: (
-        <div className="book-page">
-            <div className='page2-content'>
-                <h2>Importance of Nutrition in Athletic Performance</h2>
-                    <ul>
-                        <li>Nutrition fuels energy systems during training and games.</li>
-                        <li>Helps in muscle growth and recovery.</li>
-                        <li>Prevents injury and boosts immunity.</li>
-                        <li>Improves focus and academic performance.</li>
-                    </ul>
-            </div>
+  type: 'page',
+  content: (
+    <div className="book-page">
+      <div className="bordered-content page1-content" id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Welcome to GameFuel, your complete nutrition guide designed to empower
+          Basud National High School student-athletes. This eBook serves to
+          provide practical, science-based nutrition advice to help you perform
+          better, recover faster, and stay healthy. 📖
+        </p>
+      </div>
+    </div>
+  )
+},
+{
+  type: 'page',
+  content: (
+    <div className="book-page">
+      <div className="page2-content">
+        <h2 className="page-title">Importance of Nutrition in Athletic Performance</h2>
+        <div className="page2-image-container">
+          <img 
+            src="/images/2.jpg" 
+            alt="Nutrition and Athletic Performance" 
+            className="page2-image" 
+          />
         </div>
-      )
-    },
-    {
-      type: 'page',
-      content: (
-        <div className="book-page">
-            <div className='page3-content'>
-                <h2>Nutritional Needs of Student-Athletes</h2>
-                    <ul>
-                        <li>
-                        <strong>Macronutrients:</strong>
-                        <ul>
-                            <li>Carbohydrates (55–65%) – Primary energy source.</li>
-                            <li>Protein (12–15%) – Muscle repair and growth.</li>
-                            <li>Fats (20–30%) – Supports hormone production and recovery.</li>
-                        </ul>
-                        </li>
-                        <li>
-                        <strong>Micronutrients:</strong>
-                        <ul>
-                            <li>Iron, calcium, vitamin D, B-complex vitamins.</li>
-                        </ul>
-                        </li>
-                        <li>
-                        Calories: Varies by age, sex, and sport. Ranges from 2,000–3,500 kcal/day.
-                        </li>
-                    </ul>
-            </div>
+        <div className="page2-text">
+          <ul className="benefits-list">
+            <li>Nutrition fuels energy systems during training and games.</li>
+            <li>Helps in muscle growth and recovery.</li>
+            <li>Prevents injury and boosts immunity.</li>
+            <li>Improves focus and academic performance.</li>
+          </ul>
         </div>
-      )
-    },
+      </div>
+    </div>
+  )
+},
+{
+  type: 'page',
+  content: (
+    <div className="book-page">
+      <div className="page3-content">
+        <h2 className="page-title">Nutritional Needs of Student-Athletes</h2>
+
+        <ul className="main-list">
+          <li>
+            <strong>Macronutrients:</strong>
+            <ul className="circle-list">
+              <li>Carbohydrates (55–65%) – Primary energy source.</li>
+              <li>Protein (12–15%) – Muscle repair and growth.</li>
+              <li>Fats (20–30%) – Supports hormone production and recovery.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Micronutrients:</strong>
+            <ul className="circle-list">
+              <li>Iron, calcium, vitamin D, B-complex vitamins.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Calories:</strong> Varies by age, sex, and sport. Ranges from 2,000–3,500 kcal/day.
+          </li>
+        </ul>
+      </div>
+    </div>
+  )
+},
     {
       type: 'page',
       content: (
@@ -622,18 +632,18 @@ function LandingPage() {
       type: 'page',
       content: (
         <div className="book-page">
-            <div className='page15-content'>
-                <h2>Hydration Strategies</h2>
-                    <ul>
-                        <li>Drink 250–500 mL of water two hours before activity.</li>
-                        <li>Sip 100–150 mL of water every 20 minutes during training.</li>
-                        <li>For events longer than 60 minutes, include electrolytes (sports drinks or oral rehydration salts).</li>
-                        <li>Check urine color — pale yellow indicates good hydration.</li>
-                    </ul>
-            </div>
+          <div className="page15-content">
+            <h2>Hydration Strategies</h2>
+            <ul>
+              <li>Drink 250–500 mL of water two hours before activity.</li>
+              <li>Sip 100–150 mL of water every 20 minutes during training.</li>
+              <li>For events longer than 60 minutes, include electrolytes (sports drinks or oral rehydration salts).</li>
+              <li>Check urine color — pale yellow indicates good hydration.</li>
+            </ul>
+          </div>
         </div>
       )
-    },
+    },    
     {
       type: 'page',
       content: (
@@ -658,15 +668,27 @@ function LandingPage() {
       type: 'page',
       content: (
         <div className="book-page">
-            <div className='page17-content'>
+          <div className="page17-content">
             <h2>Common Nutrition Myths</h2>
-          <ul>
-          <li>❌ “Skipping breakfast makes you lighter for sports.”</li>
-          <li>✅ Truth: Skipping breakfast drains energy stores and hinders performance.</li>
-          <li>❌ “More protein = more muscle.”</li>
-          <li>✅ Truth: Excess protein won’t build muscle without proper training.</li>
-        </ul>
+            <div className="myths-circle-container">
+              <div className="myth-item red-item">
+                <span className="icon">❌</span>
+                <span className="text">“Skipping breakfast makes you lighter for sports.”</span>
+              </div>
+              <div className="myth-item green-item">
+                <span className="icon">✅</span>
+                <span className="text"><strong>Truth:</strong> Skipping breakfast drains energy stores and hinders performance.</span>
+              </div>
+              <div className="myth-item red-item">
+                <span className="icon">❌</span>
+                <span className="text">“More protein = more muscle.”</span>
+              </div>
+              <div className="myth-item green-item">
+                <span className="icon">✅</span>
+                <span className="text"><strong>Truth:</strong> Excess protein won’t build muscle without proper training.</span>
+              </div>
             </div>
+          </div>
         </div>
       )
     },
@@ -703,24 +725,27 @@ function LandingPage() {
         </div>
       )
     },
-    {
-      type: 'page',
-      content: (
-        <div className="book-page">
-            <div className='page20-content'>
-            <h2>Thank You for Reading!</h2>
-          <br></br>
-          <h4>Download Link for PDF</h4>
-          <a href="/ebook_content.pdf"
-            download="GameFuel_Ebook.pdf"
-            target="_blank"
-            rel="noopener noreferrer">
-            Click here to download the PDF version of this eBook.
-          </a>
-            </div>
-        </div>
-      )
-    },
+   {
+  type: 'page',
+  content: (
+    <div className="book-page">
+      <img 
+        src="/images/book.png" 
+        alt="Thank You" 
+      />
+      <h2 className="ty">Thank You for Reading!</h2>
+      <a
+        href="/ebook_content.pdf"
+        download="GameFuel_Ebook.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="download-button"
+      >
+        Download PDF
+      </a>
+    </div>
+  )
+},
     // Add more pages if you want
   ];
 
