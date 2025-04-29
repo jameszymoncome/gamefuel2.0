@@ -18,8 +18,15 @@ function LandingPage() {
       type: 'title',
       content: (
         <div className="book-page">
-          <h1>GameFuel</h1>
-          <p>A Dietary Guide for Student-Athletes</p>
+          <div className="title-page2">
+            <h1>GameFuel</h1>
+            <h2>A Dietary Guideline for Student-Athletes at Basud National High School</h2>
+            <p className="tagline">Fuel Smart. Play Hard. Recover Strong.</p>
+            <div className="authors">
+              <p>By Joshua Abel Rawat</p>
+              <p>and Girlie Villamar</p>
+            </div>
+          </div>
         </div>
       )
     },
