@@ -34,8 +34,8 @@ function LandingPage() {
                     <li onClick={() => { setPage(3); handleNav(); }}>Introduction</li>
                     <li onClick={() => { setPage(4); handleNav(); }}>Importance of Nutrition in Athletic Performance</li>
                     <li onClick={() => { setPage(5); handleNav(); }}>Nutritional Needs of Student-Athletes</li>
-                    <li onClick={() => { setPage(15); handleNav(); }}>Scientifically-Backed Dietary Guidelines</li>
-                    <li onClick={() => { setPage(16); handleNav(); }}>One-Month Meal Plan (With Portion Sizes & Intensity Levels)</li>
+                    <li onClick={() => { setPage(6); handleNav(); }}>Scientifically-Backed Dietary Guidelines</li>
+                    <li onClick={() => { setPage(7); handleNav(); }}>One-Month Meal Plan (With Portion Sizes & Intensity Levels)</li>
                     <li onClick={() => { setPage(17); handleNav(); }}>Hydration Strategies</li>
                     <li onClick={() => { setPage(18); handleNav(); }}>Pre-Game and Post-Game Nutrition</li>
                     <li onClick={() => { setPage(19); handleNav(); }}>Common Myths and Misconceptions</li>
@@ -163,7 +163,7 @@ function LandingPage() {
       type: 'page',
       content: (
         <div className="book-page">
-            <div className='page5-content'>
+            <div className='page6-14-content'>
                 <section id="week1" class="meal-plan">
                     <h2>📅 One-Month Meal Plan</h2>
 
@@ -792,6 +792,7 @@ function LandingPage() {
             )}
         <div className={`page-content ${direction}`}>
           {pages[page].content}
+          {page >= 3 && <div className="page-number">{page - 2}</div>}
         </div>
 
         {/* Navigation Buttons */}
