@@ -714,18 +714,26 @@ function LandingPage() {
       type: 'page',
       content: (
         <div className="book-page">
-            <div className='page18-content'>
+          <div className="page18-content">
             <h2>Practical Tips for Busy Student-Athletes</h2>
-          <ul>
-          <li>Pack healthy snacks: boiled eggs, trail mix, fruits.</li>
-          <li>Avoid energy drinks and sugary sodas.</li>
-          <li>Eat rainbow-colored fruits and vegetables daily.</li>
-          <li>Don’t skip meals—even on rest days.</li>
-        </ul>
+            <div className="timeline">
+              <div className="timeline-item left">
+                <div className="timeline-content">Pack healthy snacks: boiled eggs, trail mix, fruits.</div>
+              </div>
+              <div className="timeline-item right">
+                <div className="timeline-content">Avoid energy drinks and sugary sodas.</div>
+              </div>
+              <div className="timeline-item left">
+                <div className="timeline-content">Eat rainbow-colored fruits and vegetables daily.</div>
+              </div>
+              <div className="timeline-item right">
+                <div className="timeline-content">Don’t skip meals—even on rest days.</div>
+              </div>
             </div>
+          </div>
         </div>
       )
-    },
+    },    
     {
       type: 'page',
       content: (

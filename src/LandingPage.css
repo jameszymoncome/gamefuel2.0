@@ -729,47 +729,94 @@
 
 
 
-  /*Page 18*/
-  .page18-content {
-    padding: 10px;
-    height: 100%;
-    overflow: hidden;
+  /*PAGE 18*/
+.page18-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  height: 100%;            /* ensure it fills the page height */
+  padding-top: 20px;       /* slight downward shift */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.page18-content h2 {
+  font-family: 'Georgia', serif;
+  font-size: 22px; /* Slightly smaller title */
+  color: #67AE6E;
+  text-align: center;
+  margin: 0 0 50px 0; /* Added 20px space below the heading */
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0; /* No top padding */
+  max-width: 100%;
+  width: 100%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e8fbe8;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 0 10px; /* tighter horizontal space */
+  margin: 2px 0;    /* minimum vertical space between items */
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-content {
+  background: #e8fbe8;
+  padding: 18px 15px; /* thinner vertical padding */
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 15px; /* slightly smaller text */
+  color: #444;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 90%;
+  margin-bottom: 3px; /* reduce gap below each block */
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
     text-align: left;
+    padding-left: 20px;
   }
-  
-  .page18-content h2 {
-    font-family: 'Georgia', serif;
-    font-size: 25px;
-    color: #2f4f4f;
-    text-align: center;
-    margin-bottom: 50px;
+
+  .timeline-content {
+    max-width: 100%;
   }
-  
-  .page18-content ul {
-    list-style-type: disc;
-    list-style: none;
-    padding-left: 1.2em;
-    margin: 0;
-  }
-  
-  .page18-content li {
-    background-color: #A8D5BA;
-    color: #000;
-    padding: 14px 18px; /* Reduced padding */
-    border-radius: 10px;
-    width: 90%;
-    max-width: 560px;
-    text-align: left;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
-    font-size: 0.95rem; /* Slightly smaller text */
-    line-height: 1.5;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    background-color: #e8fbe8;
-    border: 1px solid #c8e6c9;
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 20px;
-  }
+}
 
   /*Page 19*/
   .page19-content {
