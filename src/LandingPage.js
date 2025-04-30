@@ -104,21 +104,29 @@ function LandingPage() {
 
         <ul className="main-list">
           <li>
-            <strong>Macronutrients:</strong>
-            <ul className="circle-list">
-              <li>Carbohydrates (55–65%) – Primary energy source.</li>
-              <li>Protein (12–15%) – Muscle repair and growth.</li>
-              <li>Fats (20–30%) – Supports hormone production and recovery.</li>
-            </ul>
+            <div className="info-box macronutrients">
+              <strong>Macronutrients:</strong>
+              <ul className="circle-list">
+                <li>Carbohydrates (55–65%) – Primary energy source.</li>
+                <li>Protein (12–15%) – Muscle repair and growth.</li>
+                <li>Fats (20–30%) – Supports hormone production and recovery.</li>
+              </ul>
+            </div>
           </li>
+
           <li>
-            <strong>Micronutrients:</strong>
-            <ul className="circle-list">
-              <li>Iron, calcium, vitamin D, B-complex vitamins.</li>
-            </ul>
+            <div className="info-box micronutrients">
+              <strong>Micronutrients:</strong>
+              <ul className="circle-list">
+                <li>Iron, calcium, vitamin D, B-complex vitamins.</li>
+              </ul>
+            </div>
           </li>
+
           <li>
-            <strong>Calories:</strong> Varies by age, sex, and sport. Ranges from 2,000–3,500 kcal/day.
+            <div className="info-box calories">
+              <strong>Calories:</strong> Varies by age, sex, and sport. Ranges from 2,000–3,500 kcal/day.
+            </div>
           </li>
         </ul>
       </div>
@@ -172,7 +180,7 @@ function LandingPage() {
         <div className="book-page">
             <div className='page6-14-content'>
                 <section id="week1" class="meal-plan">
-                    <h2>📅 One-Month Meal Plan</h2>
+                    <h2>One-Month Meal Plan</h2>
 
                     <div class="day">
                     <h3>Day 1 – Moderate Intensity</h3>
