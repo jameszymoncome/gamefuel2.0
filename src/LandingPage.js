@@ -64,7 +64,7 @@ function LandingPage() {
           Welcome to GameFuel, your complete nutrition guide designed to empower
           Basud National High School student-athletes. This eBook serves to
           provide practical, science-based nutrition advice to help you perform
-          better, recover faster, and stay healthy. 📖
+          better, recover faster, and stay healthy. 
         </p>
       </div>
     </div>

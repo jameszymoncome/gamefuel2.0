@@ -220,7 +220,7 @@
   .toc-title {
     font-family: 'Georgia', serif;
     font-size: 1.4rem;
-    color: #2f4f4f;
+    color: #328E6E;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -259,6 +259,7 @@
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
+    
   }
   
 
@@ -270,7 +271,7 @@
   }
   
   h2 {
-    font-size: 18px;
+    font-size: 40px;
     margin-bottom: 10px;
   }
   
@@ -435,7 +436,7 @@
   }
   
   .day h3 {
-    font-size: 0.5rem;
+    font-size: 15px;
     margin-bottom: 6px;
     color: #4caf50;
   }
@@ -447,7 +448,7 @@
   
   .page5-content .day ul li {
     margin-bottom: 4px;
-    font-size: 0.5rem;
+    font-size: 10px;
     color: #333;
   }
   
@@ -503,7 +504,7 @@
 }
 
 .page6-14-content .day h3 {
-  font-size: 0.65rem;     /* Slightly larger for readability */
+  font-size: 15px;     /* Slightly larger for readability */
   margin-bottom: 4px;
   color: #4caf50;
 }
@@ -515,7 +516,7 @@
 
 .page6-14-content .day ul li {
   margin-bottom: 3px;
-  font-size: 0.6rem;       /* Slightly larger for readability */
+  font-size: 10px;       /* Slightly larger for readability */
   color: #333;
 }
 
@@ -542,8 +543,8 @@
 }
 
 .page15-content ul li {
-  background-color: #67ae6e; /* Green */
-  color: white;
+  background-color: #328E6E; /* Green */
+  color: #E1EEBC;
   padding: 15px 20px;
   border-radius: 10px;
   width: 90%;
@@ -555,7 +556,7 @@
 }
 
 .page15-content ul li:hover {
-  background-color: #67ae6e; /* Darker green on hover */
+  background-color: #90C67C; /* Darker green on hover */
 }
 
 
@@ -661,10 +662,10 @@
   
   .page18-content h2 {
     font-family: 'Georgia', serif;
-    font-size: 1.3rem;
+    font-size: 25px;
     color: #2f4f4f;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 50px;
   }
   
   .page18-content ul {
@@ -674,60 +675,72 @@
   }
   
   .page18-content li {
-    font-size: 0.85rem;
+    font-size: 15px;
     color: #444;
     margin-bottom: 8px;
     line-height: 1.4;
   }
 
   /*Page 19*/
-  .page19-content h2 {
-    font-size: 1.8rem; /* Adjust font size */
-    text-align: center;
-    color: #ffffff; /* White text */
-    background-color: #328e6e; /* Dark blue background */
-    padding: 10px 20px;
-    display: inline-block;
-    position: relative;
-    margin: 20px auto; /* Center the ribbon */
+  .page19-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align to top */
+    min-height: 100vh; /* Fill the page */
+    padding-top: 20px; /* Push content downward slightly */
   }
   
-  /* Add ribbon effect */
-  .page19-content h2::before,
-  .page19-content h2::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-  }
-  
-  .page19-content h2::before {
-    left: -20px;
-    border-width: 10px 20px 10px 0;
-    border-color: transparent #328e6e transparent transparent;
-  }
-  
-  .page19-content h2::after {
-    right: -20px;
-    border-width: 10px 0 10px 20px;
-    border-color: transparent transparent transparent #328e6e;
-  }
-  
-  .page19-content ul {
-    list-style-type: disc;
-    padding-left: 1.2em;
-    margin: 0;
-  }
-  
-  .page19-content li {
-    font-size: 0.85rem;
-    color: #444;
-    margin-bottom: 8px;
-    line-height: 1.4;
-  }
+
+.page19-content h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #328e6e;
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  margin: 20px auto;
+}
+
+/* Add ribbon effect */
+.page19-content h2::before,
+.page19-content h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.page19-content h2::before {
+  left: -20px;
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #328e6e transparent transparent;
+}
+
+.page19-content h2::after {
+  right: -20px;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #328e6e;
+}
+
+.page19-content ul {
+  list-style-type: disc;
+  padding-left: 1.2em;
+  margin-top: 40px; /* Space from heading */
+  text-align: left;
+}
+
+.page19-content li {
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
   
 /*Page 20*/
 .page20-content {
@@ -969,24 +982,50 @@
 }
 
 .book-page h2 {
-  color: #706c4b;
+  color: #67AE6E;
 }
 
 .book-page .day h3 {
-  color: #a3b452;
+  color: #90C67C;
 }
 .book-page .page16-content .day h5 {
-  color: #a3b452;
+  color: #E1EEBC;
 }
 
 #introduction h2 {
-  color: #706c4b;
+  color: #328E6E;
 }
 
+
 .book-page h1 {
-  color: #706c4b;
+  color: #328E6E;
 }
   
+.book-page .page19-content h2{
+  color: #E1EEBC;
+}
+
+.page16-content h2{
+  color: #328E6E;
+}
+.page18-content h2{
+  color: #328E6E;
+}
+
+.page17-content h2{
+  color:#328E6E;
+}
+
+.page16-content h2{
+  color: #328E6E;
+}
+
+.toc-title {
+  color: #328E6E;
+}
+.page16-content h5 {
+  color: #328E6E;
+}
 
   
   
