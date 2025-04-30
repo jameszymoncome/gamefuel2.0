@@ -259,6 +259,7 @@
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
+    margin-top: 7rem;
     
   }
   
@@ -476,14 +477,14 @@
 .page6-14-content {
   padding: 0;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   text-align: left;
-  margin-top: 1rem;
+  margin-top: 0.1rem;
 }
 
 .page6-14-content h2 {
   font-family: 'Georgia', serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #2f4f4f;
   text-align: center;
   margin-bottom: 10px;
@@ -505,7 +506,7 @@
 
 .page6-14-content .day h3 {
   font-size: 15px;     /* Slightly larger for readability */
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   color: #4caf50;
 }
 
@@ -530,7 +531,7 @@
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 20px;
-  color: #000;
+  color: #67AE6E;
 }
 
 .page15-content ul {
@@ -993,7 +994,7 @@
 }
 
 #introduction h2 {
-  color: #328E6E;
+  color: #67AE6E;
 }
 
 
@@ -1005,26 +1006,30 @@
   color: #E1EEBC;
 }
 
-.page16-content h2{
-  color: #328E6E;
+.page15-content h2 {
+  color: #67AE6E;
 }
+
 .page18-content h2{
-  color: #328E6E;
+  color: #67AE6E;
 }
 
 .page17-content h2{
-  color:#328E6E;
+  color:#67AE6E;
 }
 
 .page16-content h2{
-  color: #328E6E;
+  color: #67AE6E;
+  font-size: 1.5rem;
 }
 
 .toc-title {
   color: #328E6E;
 }
 .page16-content h5 {
-  color: #328E6E;
+  color: #67AE6E;
+  align-items: center;
+  margin-top: 4rem;
 }
 
   
