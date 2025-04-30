@@ -19,7 +19,7 @@ function LandingPage() {
       content: (
         <div className="book-page">
           <div className="title-page2">
-            <h1>MAMAMO KIKAY</h1>
+            <h1>GameFuel</h1>
             <h2>A Dietary Guideline for Student-Athletes at Basud National High School</h2>
             <p className="tagline">Fuel Smart. Play Hard. Recover Strong.</p>
             <div className="authors">
