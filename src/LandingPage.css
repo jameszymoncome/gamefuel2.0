@@ -247,6 +247,7 @@
   }
   
 
+
   /*Page 1*/
   
   .bordered-content {
@@ -963,6 +964,24 @@
   }
 }
 
+.book-page h2 {
+  color: #706c4b;
+}
+
+.book-page .day h3 {
+  color: #a3b452;
+}
+.book-page .page16-content .day h5 {
+  color: #a3b452;
+}
+
+#introduction h2 {
+  color: #706c4b;
+}
+
+.book-page h1 {
+  color: #706c4b;
+}
   
 
   

@@ -10,7 +10,7 @@ function LandingPage() {
       type: 'cover',
       content: (
         <div className="book-cover" onClick={() => {setPage(1); setDirection('next'); }}>
-          <img src="/images/book-cover.png" alt="Book Cover" className="book-image" />
+          <img src="/images/cover-book.png" alt="Book Cover" className="book-image" />
         </div>
       )
     },
@@ -737,8 +737,9 @@ function LandingPage() {
   content: (
     <div className="book-page">
       <img 
-        src="/images/book.png" 
+        src="/images/ebook.png" 
         alt="Thank You" 
+        width={300}
       />
       <h2 className="ty">Thank You for Reading!</h2>
       <a
