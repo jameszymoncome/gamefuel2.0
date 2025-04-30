@@ -5,6 +5,10 @@
     height: 100vh;
     background: linear-gradient(to bottom right, #f0f0f0, #d1d5db);
     font-family: 'Georgia', serif;
+    background-image: url('./book-bg.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
   }
   
   .book-wrapper {
