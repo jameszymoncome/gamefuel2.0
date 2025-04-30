@@ -10,7 +10,7 @@ function LandingPage() {
       type: 'cover',
       content: (
         <div className="book-cover" onClick={() => {setPage(1); setDirection('next'); }}>
-          <img src="/images/cover-book.png" alt="Book Cover" className="book-image" />
+          <img src="/images/final-book-bg.png" alt="Book Cover" className="book-image" />
         </div>
       )
     },
@@ -730,17 +730,18 @@ function LandingPage() {
       type: 'page',
       content: (
         <div className="book-page">
-            <div className='page19-content'>
+          <div className='page19-content'>
             <h2>Final Recommendations</h2>
-          <ul>
-          <li>Make small, consistent changes.</li>
-          <li>Stay hydrated throughout the day.</li>
-          <li>Listen to your body.</li>
-          <li>Prioritize sleep and recovery.</li>
-          <li>Seek help from coaches, teachers, or health professionals when unsure</li>
-        </ul>
-            </div>
+            <ul className="recommendation-list">
+              <li>Make small, consistent changes.</li>
+              <li>Stay hydrated throughout the day.</li>
+              <li>Listen to your body.</li>
+              <li>Prioritize sleep and recovery.</li>
+              <li>Seek help from coaches, teachers, or health professionals when unsure.</li>
+            </ul>
+          </div>
         </div>
+
       )
     },
    {

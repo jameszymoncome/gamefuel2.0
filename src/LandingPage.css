@@ -28,7 +28,7 @@
   }
   
   .book-image {
-    width: 300px;
+    width: 350px;
     box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
   }
@@ -587,11 +587,12 @@
   gap: 15px; /* Slightly reduced gap */
   align-items: center;
   font-family: 'Georgia', serif;
+  
 }
 
 .page15-content ul li {
   background-color: #A8D5BA;
-  color: #2E4D3A;
+  color: #000;
   padding: 14px 18px; /* Reduced padding */
   border-radius: 10px;
   width: 90%;
@@ -601,6 +602,10 @@
   font-size: 0.95rem; /* Slightly smaller text */
   line-height: 1.5;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #e8fbe8;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 12px 16px;
 }
 
 .page15-content ul li:hover {
@@ -742,15 +747,28 @@
   
   .page18-content ul {
     list-style-type: disc;
+    list-style: none;
     padding-left: 1.2em;
     margin: 0;
   }
   
   .page18-content li {
-    font-size: 15px;
-    color: #444;
-    margin-bottom: 8px;
-    line-height: 1.4;
+    background-color: #A8D5BA;
+    color: #000;
+    padding: 14px 18px; /* Reduced padding */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 560px;
+    text-align: left;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+    font-size: 0.95rem; /* Slightly smaller text */
+    line-height: 1.5;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #e8fbe8;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
   }
 
   /*Page 19*/
@@ -772,46 +790,45 @@
   padding: 10px 20px;
   display: inline-block;
   position: relative;
-  margin: 20px auto;
 }
 
-/* Add ribbon effect */
-.page19-content h2::before,
-.page19-content h2::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
+
+.recommendation-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
 }
 
-.page19-content h2::before {
-  left: -20px;
-  border-width: 10px 20px 10px 0;
-  border-color: transparent #328e6e transparent transparent;
+.recommendation-list li {
+  background-color: #e7f4ef;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  color: #2d4035;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: fit-content;
+  max-width: 80%;
+  transition: all 0.3s ease;
 }
 
-.page19-content h2::after {
-  right: -20px;
-  border-width: 10px 0 10px 20px;
-  border-color: transparent transparent transparent #328e6e;
+.recommendation-list li:nth-child(odd) {
+  align-self: flex-start;
+  margin-left: 0;
+  background-color: #d2f1e5;
 }
 
-.page19-content ul {
-  list-style-type: disc;
-  padding-left: 1.2em;
-  margin-top: 40px; /* Space from heading */
-  text-align: left;
+.recommendation-list li:nth-child(even) {
+  align-self: flex-end;
+  margin-right: 0;
+  background-color: #c4e8ff;
 }
 
-.page19-content li {
-  font-size: 0.85rem;
-  color: #444;
-  margin-bottom: 8px;
-  line-height: 1.4;
-}
+
+
+
 
   
 /*Page 20*/
@@ -1060,6 +1077,11 @@
 
   .calories {
     background-color: #e8fbe8; /* soft orange */
+  }
+
+  .recommendation-list li {
+    max-width: 90%;
+    font-size: 0.8rem;
   }
 }
 
