@@ -23,12 +23,12 @@ function LandingPage() {
               <h1>GameFuel</h1>
               <h2>A Dietary Guideline for Student-Athletes<br />at Basud National High School</h2>
               <p className="tagline">Fuel Smart. Play Hard. Recover Strong.</p>
-              <div className="authors">
-                <p>By Joshua Abel Rawat</p>
-                <p>and Girlie Villamar</p>
-              </div>
             </div>
           </div>
+          <div className="authors"  >
+                <p>By <br></br><br></br><br></br><br></br>Joshua Abel Rawat<br></br></p>
+                <p>Girlie Villamar</p>
+              </div>
         </div>
 
       )
@@ -738,20 +738,25 @@ function LandingPage() {
       type: 'page',
       content: (
         <div className="book-page">
-          <div className='page19-content'>
-            <h2>Final Recommendations</h2>
-            <ul className="recommendation-list">
-              <li>Make small, consistent changes.</li>
-              <li>Stay hydrated throughout the day.</li>
-              <li>Listen to your body.</li>
-              <li>Prioritize sleep and recovery.</li>
-              <li>Seek help from coaches, teachers, or health professionals when unsure.</li>
-            </ul>
+          <div className="page19-content">
+            <div className="recommendation-badge">
+              <span className="text">FINAL RECOMMENDATIONS</span>
+              <span className="check-icon">&#10003;</span>
+            </div>
+            <div className="sticky-note">
+              <ul className="recommendation-list">
+                <li>Make small, consistent changes.</li>
+                <li>Stay hydrated throughout the day.</li>
+                <li>Listen to your body.</li>
+                <li>Prioritize sleep and recovery.</li>
+                <li>Seek help from coaches, teachers, or health professionals when unsure.</li>
+              </ul>
+            </div>
           </div>
         </div>
-
       )
-    },
+    },    
+    
    {
   type: 'page',
   content: (
