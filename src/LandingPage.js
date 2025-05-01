@@ -666,22 +666,25 @@ function LandingPage() {
       type: 'page',
       content: (
         <div className="book-page">
-            <div className='page16-content'>
+          <div className="page16-content">
             <h2>Pre-Game and Post-Game Nutrition</h2>
-          <h5>Before Game:</h5>
-        <ul>
-          <li>3 hours before: Rice + lean meat + fruits</li>
-          <li>30 mins before: Banana + water</li>
-        </ul>
-        <h5>After Game:</h5>
-        <ul>
-          <li>Within 30 minutes: Chocolate milk, sandwich</li>
-          <li>1–2 hours after: Balanced meal (carbs + protein + vegetables)</li>
-        </ul>
-            </div>
+    
+            <h5>Before Game:</h5>
+            <ul>
+              <li><strong>3 hours before:</strong> Rice with lean meat and fruits</li>
+              <li><strong>30 minutes before:</strong> Banana and water</li>
+            </ul>
+    
+            <h5>After Game:</h5>
+            <ul>
+              <li><strong>Within 30 minutes:</strong> Chocolate milk and a sandwich</li>
+              <li><strong>1–2 hours later:</strong> A balanced meal with carbohydrates, protein, and vegetables</li>
+            </ul>
+          </div>
         </div>
       )
-    },
+    }
+,    
     {
       type: 'page',
       content: (
