@@ -743,7 +743,7 @@ function LandingPage() {
               <span className="text">FINAL RECOMMENDATIONS</span>
               <span className="check-icon">&#10003;</span>
             </div>
-            <div className="sticky-note">
+            <div className="recommendation-card">
               <ul className="recommendation-list">
                 <li>Make small, consistent changes.</li>
                 <li>Stay hydrated throughout the day.</li>
@@ -755,7 +755,8 @@ function LandingPage() {
           </div>
         </div>
       )
-    },    
+    },
+     
     
    {
   type: 'page',

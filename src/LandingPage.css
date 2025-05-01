@@ -866,52 +866,44 @@
     justify-content: center;
   }
   
-  /* Existing recommendation list */
+  .recommendation-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    width: 90%;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .recommendation-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Updated recommendation list */
   .recommendation-list {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin: 0;
     width: 100%;
-    max-width: 600px;
   }
   
   .recommendation-list li {
-    background-color: #e8fbe8;
-    padding: 15px 20px;
+    background-color: #f1fdf3;
+    padding: 14px 18px;
     border-radius: 12px;
-    margin-bottom: 20px;
-    font-size: 0.8rem;
-    color: #2d4035;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: fit-content;
-    max-width: 80%;
-    transition: all 0.3s ease;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #234b2c;
+    border-left: 4px solid #4ecf63;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s;
   }
   
-  .recommendation-list li:nth-child(odd) {
-    align-self: flex-start;
+  .recommendation-list li:hover {
+    background-color: #e7faeb;
   }
-  
-  .recommendation-list li:nth-child(even) {
-    align-self: flex-end;
-  }
-  /* Sticky note style */
-.sticky-note {
-  background: linear-gradient(to bottom right, #fff176, #fdd835);
-  border-radius: 8px;
-  padding: 25px 30px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  transform: rotate(-2deg);
-  max-width: 650px;
-  width: 90%;
-  margin-top: 20px;
-}
-
-/* Optional: soften list inside sticky note */
-.sticky-note .recommendation-list li {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-left: 5px solid #4ecf63;
-}
 
   
 
