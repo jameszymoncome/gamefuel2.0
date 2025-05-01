@@ -757,13 +757,13 @@ function LandingPage() {
   content: (
     <div className="book-page">
       <img 
-        src="/images/ebook.png" 
+        src="/images/ebook-final.png" 
         alt="Thank You" 
         width={300}
       />
       <h2 className="ty">Thank You for Reading!</h2>
       <a
-        href="/ebook_content.pdf"
+        href="/EBOOK-GAMEFUEL.pdf"
         download="GameFuel_Ebook.pdf"
         target="_blank"
         rel="noopener noreferrer"
