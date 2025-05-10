@@ -10,7 +10,7 @@ function LandingPage() {
       type: 'cover',
       content: (
         <div className="book-cover" onClick={() => {setPage(1); setDirection('next'); }}>
-          <img src="/images/final-book-bg.jpg" alt="Book Cover" className="book-image" />
+          <img src="/images/gamefuel.jpg" alt="Book Cover" className="book-image" />
         </div>
       )
     },
@@ -21,7 +21,7 @@ function LandingPage() {
           <div className="title-page2">
             <div className="title-border">
               <h1>GameFuel</h1>
-              <h2>A Dietary Guideline for Student-Athletes<br />at Basud National High School</h2>
+              <h2>A Dietary Guideline for Student-Athletes<br />at Pablo S. Villafuerte National High School</h2>
               <p className="tagline">Fuel Smart. Play Hard. Recover Strong.</p>
             </div>
           </div>
@@ -1456,7 +1456,7 @@ function LandingPage() {
   content: (
     <div className="book-page">
       <img 
-        src="/images/ebook-final.png" 
+        src="/images/gamefuelbk.jpg" 
         alt="Thank You" 
         width={300}
       />
