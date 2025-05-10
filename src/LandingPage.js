@@ -182,45 +182,78 @@ function LandingPage() {
       content: (
         <div className="book-page">
             <div className='page6-14-content'>
-                <section id="week1" class="meal-plan">
-                    <h2>One-Month Meal Plan</h2>
+                <section id="week1" className="meal-plan">
+                  <h2>One-Month Meal Plan</h2>
 
-                    <div class="day">
-                    <h3>Day 1 – Moderate Intensity</h3>
-                    <ul>
-                        <li><strong>Breakfast:</strong> Oatmeal, banana, boiled egg</li>
-                        <li><strong>Morning Snack:</strong> Peanut butter sandwich, water</li>
-                        <li><strong>Lunch:</strong> Chicken adobo, brown rice, side salad</li>
-                        <li><strong>Afternoon Snack:</strong> Apple, yogurt</li>
-                        <li><strong>Dinner:</strong> Grilled fish, sweet potato, steamed veggies</li>
-                        <li><strong>Hydration:</strong> 8–10 glasses water + electrolyte drink</li>
-                    </ul>
-                    </div>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th>Day 1</th>
+                        <th>Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                    <div class="day">
-                    <h3>Day 2 – Moderate Intensity</h3>
-                    <ul>
-                        <li><strong>Breakfast:</strong> Oatmeal, banana, boiled egg</li>
-                        <li><strong>Morning Snack:</strong> Peanut butter sandwich, water</li>
-                        <li><strong>Lunch:</strong> Chicken adobo, brown rice, side salad</li>
-                        <li><strong>Afternoon Snack:</strong> Apple, yogurt</li>
-                        <li><strong>Dinner:</strong> Grilled fish, sweet potato, steamed veggies</li>
-                        <li><strong>Hydration:</strong> 8–10 glasses water + electrolyte drink</li>
-                    </ul>
-                    </div>
-
-                    <div class="day">
-                    <h3>Day 3 – Moderate Intensity</h3>
-                    <ul>
-                        <li><strong>Breakfast:</strong> Oatmeal, banana, boiled egg</li>
-                        <li><strong>Morning Snack:</strong> Peanut butter sandwich, water</li>
-                        <li><strong>Lunch:</strong> Chicken adobo, brown rice, side salad</li>
-                        <li><strong>Afternoon Snack:</strong> Apple, yogurt</li>
-                        <li><strong>Dinner:</strong> Grilled fish, sweet potato, steamed veggies</li>
-                        <li><strong>Hydration:</strong> 8–10 glasses water + electrolyte drink</li>
-                    </ul>
-                </div>
-
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th>Day 2</th>
+                        <th>Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </section>
             </div>
         </div>

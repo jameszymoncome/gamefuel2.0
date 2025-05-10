@@ -1267,6 +1267,33 @@
   color: #3e6b50;
 }
 
+.meal-table-1 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.meal-table-1 th,
+.meal-table-1 td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.meal-table-1 th {
+  background-color: #b6eeb7;
+  font-weight: bold;
+}
+
+.meal-table-1 td {
+  font-size: 0.6rem;
+}
+
+.meal-table-1 th:nth-child(4),
+.meal-table-1 td:nth-child(4) {
+  width: 15%; /* Adjust width for the new column */
+}
+
 
   
   
