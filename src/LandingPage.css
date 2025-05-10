@@ -1174,6 +1174,24 @@
     max-width: 90%;
     font-size: 0.8rem;
   }
+
+  #week1 td{
+    font-size: 0.5rem; /* Adjust font size */
+  }
+  #week1 th{
+    font-size: 0.7rem; /* Adjust font size */
+  }
+
+  .meal-plan table{
+    width: 90%;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book-page {
+    width: 80%; /* Adjust width to fit smaller screens */
+  }
   
 }
 

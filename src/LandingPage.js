@@ -46,11 +46,11 @@ function LandingPage() {
                     <li onClick={() => { setPage(5); handleNav(); }}>Nutritional Needs of Student-Athletes</li>
                     <li onClick={() => { setPage(6); handleNav(); }}>Scientifically-Backed Dietary Guidelines</li>
                     <li onClick={() => { setPage(7); handleNav(); }}>One-Month Meal Plan (With Portion Sizes & Intensity Levels)</li>
-                    <li onClick={() => { setPage(17); handleNav(); }}>Hydration Strategies</li>
-                    <li onClick={() => { setPage(18); handleNav(); }}>Pre-Game and Post-Game Nutrition</li>
-                    <li onClick={() => { setPage(19); handleNav(); }}>Common Myths and Misconceptions</li>
-                    <li onClick={() => { setPage(20); handleNav(); }}>Practical Tips for Busy Student-Athletes</li>
-                    <li onClick={() => { setPage(21); handleNav(); }}>Final Recommendations</li>
+                    <li onClick={() => { setPage(22); handleNav(); }}>Hydration Strategies</li>
+                    <li onClick={() => { setPage(23); handleNav(); }}>Pre-Game and Post-Game Nutrition</li>
+                    <li onClick={() => { setPage(24); handleNav(); }}>Common Myths and Misconceptions</li>
+                    <li onClick={() => { setPage(25); handleNav(); }}>Practical Tips for Busy Student-Athletes</li>
+                    <li onClick={() => { setPage(26); handleNav(); }}>Final Recommendations</li>
                     </ol>
                 </div>
             </div>
@@ -189,8 +189,7 @@ function LandingPage() {
                     <thead>
                       <tr>
                       </tr>
-                        <th>Day 1</th>
-                        <th>Moderate Intensity</th>
+                        <th colSpan="4">Day 1 - Moderate Intensity</th>
                     </thead>
                     <tbody>
                       <tr>
@@ -224,8 +223,7 @@ function LandingPage() {
                     <thead>
                       <tr>
                       </tr>
-                        <th>Day 2</th>
-                        <th>Moderate Intensity</th>
+                        <th colSpan="4">Day 2 - Moderate Intensity</th>
                     </thead>
                     <tbody>
                       <tr>
@@ -265,40 +263,72 @@ function LandingPage() {
         <div className="book-page">
             <div className='page6-14-content'>
                 <section id="week1" class="meal-plan">
-                    <div class="day">
-                    <h3>Day 4 – Moderate Intensity</h3>
-                    <ul>
-                        <li><strong>Breakfast:</strong> Oatmeal, banana, boiled egg</li>
-                        <li><strong>Morning Snack:</strong> Peanut butter sandwich, water</li>
-                        <li><strong>Lunch:</strong> Chicken adobo, brown rice, side salad</li>
-                        <li><strong>Afternoon Snack:</strong> Apple, yogurt</li>
-                        <li><strong>Dinner:</strong> Grilled fish, sweet potato, steamed veggies</li>
-                        <li><strong>Hydration:</strong> 8–10 glasses water + electrolyte drink</li>
-                    </ul>
-                    </div>
-                    <div class="day">
-                    <h3>Day 5 – Low Intensity</h3>
-                    <ul>
-                        <li><strong>Breakfast:</strong> Boiled egg, pandesal, hot cocoa</li>
-                        <li><strong>Morning Snack:</strong> Oatmeal cookies, water</li>
-                        <li><strong>Lunch:</strong> Grilled tilapia, rice, cucumber salad</li>
-                        <li><strong>Afternoon Snack:</strong> Mango slices</li>
-                        <li><strong>Dinner:</strong> Chicken tinola (soup with green papaya and spinach)</li>
-                        <li><strong>Hydration:</strong> 7–8 glasses water</li>
-                    </ul>
-                    </div>
-
-                    <div class="day">
-                    <h3>Day 6 – High Intensity</h3>
-                    <ul>
-                        <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                        <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                        <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                        <li><strong>Afternoon Snack:</strong> Peanut butter sandwich</li>
-                        <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                        <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-                    </ul>
-                    </div>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 3 - Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 4 - Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
 
                 </section>
             </div>
@@ -311,42 +341,72 @@ function LandingPage() {
         <div className="book-page">
             <div className='page6-14-content'>
             <section id="week1" class="meal-plan">
-            <div class="day">
-              <h3>Day 7 – Low Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Boiled egg, pandesal, hot cocoa</li>
-                <li><strong>Morning Snack:</strong> Oatmeal cookies, water</li>
-                <li><strong>Lunch:</strong> Grilled tilapia, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Mango slices</li>
-                <li><strong>Dinner:</strong> Chicken tinola</li>
-                <li><strong>Hydration:</strong> 7–8 glasses water</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 8 – Moderate Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Peanut butter sandwich</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 9 – Low Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Breakfast	Boiled egg, pandesal with cheese, banana, water</li>
-                <li><strong>Morning Snack:</strong> Oatmeal cookies, milk</li>
-                <li><strong>Lunch:</strong> Grilled tilapia, rice, steamed kangkong, water</li>
-                <li><strong>Afternoon Snack:</strong> Mango slices</li>
-                <li><strong>Dinner:</strong> Chicken tinola, rice, sautéed sayote</li>
-                <li><strong>Hydration:</strong> 7–8 glasses of water</li>
-              </ul>
-            </div>
-
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 5 - Low Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Boiled egg, pandesal, hot cocoa</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Oatmeal cookies, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Grilled tilapia, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Mango slices</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>7–8 glasses water</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 6 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
           </section>
             </div>
         </div>
@@ -358,42 +418,72 @@ function LandingPage() {
         <div className="book-page">
             <div className='page6-14-content'>
             <section id="week1" class="meal-plan">
-            <div class="day">
-              <h3>Day 10 – Moderate  Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Oatmeal with banana, boiled egg, water</li>
-                <li><strong>Morning Snack:</strong> Peanut butter sandwich</li>
-                <li><strong>Lunch:</strong> Chicken adobo, brown rice, steamed vegetables</li>
-                <li><strong>Afternoon Snack:</strong> Apple + yogurt</li>
-                <li><strong>Dinner:</strong> Grilled fish, sweet potato, cucumber salad</li>
-                <li><strong>Hydration:</strong> 8–10 glasses of water + electrolyte drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 11 – High Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Peanut butter sandwich</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 12 – High Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 7 - Low Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Boiled egg, pandesal, hot cocoa</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Oatmeal cookies, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Grilled tilapia, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Mango slices</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>7–8 glasses water</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 8 - Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
           </section>
             </div>
         </div>
@@ -405,42 +495,72 @@ function LandingPage() {
         <div className="book-page">
             <div className='page6-14-content'>
             <section id="week1" class="meal-plan">
-            <div class="day">
-              <h3>Day 13 – High Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 14 – High Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Peanut butter sandwich</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 15 – Low Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Breakfast	Boiled egg, pandesal with cheese, banana, water</li>
-                <li><strong>Morning Snack:</strong> Oatmeal cookies, milk</li>
-                <li><strong>Lunch:</strong> Grilled tilapia, rice, steamed kangkong, water</li>
-                <li><strong>Afternoon Snack:</strong> Mango slices</li>
-                <li><strong>Dinner:</strong> Chicken tinola, rice, sautéed sayote</li>
-                <li><strong>Hydration:</strong> 7–8 glasses of water</li>
-              </ul>
-            </div>
-
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 9 - Low Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Boiled egg, pandesal, hot cocoa</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Oatmeal cookies, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Grilled tilapia, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Mango slices</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>7–8 glasses water</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 10 - Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
           </section>
             </div>
         </div>
@@ -452,134 +572,72 @@ function LandingPage() {
         <div className="book-page">
             <div className='page6-14-content'>
             <section id="week1" class="meal-plan">
-            <div class="day">
-              <h3>Day 16 – High Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 17 – Low Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Boiled egg, pandesal with cheese, banana, water</li>
-                <li><strong>Morning Snack:</strong> Oatmeal cookies, milk</li>
-                <li><strong>Lunch:</strong> Grilled tilapia, rice, steamed kangkong, water</li>
-                <li><strong>Afternoon Snack:</strong> Mango slices</li>
-                <li><strong>Dinner:</strong> Chicken tinola, rice, sautéed sayote</li>
-                <li><strong>Hydration:</strong> 7–8 glasses of water</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 18 – Moderate Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Oatmeal with banana, boiled egg, water</li>
-                <li><strong>Morning Snack:</strong> Peanut butter sandwich</li>
-                <li><strong>Lunch:</strong> Chicken adobo, brown rice, steamed vegetables</li>
-                <li><strong>Afternoon Snack:</strong> Apple + yogurt</li>
-                <li><strong>Dinner:</strong> Grilled fish, sweet potato, cucumber salad</li>
-                <li><strong>Hydration:</strong> 8–10 glasses of water + electrolyte drink after training</li>
-              </ul>
-            </div>
-
-          </section>
-            </div>
-        </div>
-      )
-    },
-    {
-      type: 'page',
-      content: (
-        <div className="book-page">
-            <div className='page6-14-content'><section id="week1" class="meal-plan">
-            <div class="day">
-              <h3>Day 19 – High Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 20 – High Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 21 – High Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
-          </section></div>
-        </div>
-      )
-    },
-    {
-      type: 'page',
-      content: (
-        <div className="book-page">
-            <div className='page6-14-content'>
-            <section id="week1" class="meal-plan">
-            <div class="day">
-              <h3>Day 22 – Low Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Boiled egg, pandesal with cheese, banana, water</li>
-                <li><strong>Morning Snack:</strong> Oatmeal cookies, milk</li>
-                <li><strong>Lunch:</strong> Grilled tilapia, rice, steamed kangkong, water</li>
-                <li><strong>Afternoon Snack:</strong> Mango slices</li>
-                <li><strong>Dinner:</strong> Chicken tinola, rice, sautéed sayote</li>
-                <li><strong>Hydration:</strong> 7–8 glasses of water</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 23 – Moderate Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Oatmeal with banana, boiled egg, water</li>
-                <li><strong>Morning Snack:</strong> Peanut butter sandwich</li>
-                <li><strong>Lunch:</strong> Chicken adobo, brown rice, steamed vegetables</li>
-                <li><strong>Afternoon Snack:</strong> Apple + yogurt</li>
-                <li><strong>Dinner:</strong> Grilled fish, sweet potato, cucumber salad</li>
-                <li><strong>Hydration:</strong> 8–10 glasses of water + electrolyte drink after training</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 24 – Moderate Intensity</h3>
-              <ul>
-                <li><strong>Breakfast:</strong> Oatmeal with banana, boiled egg, water</li>
-                <li><strong>Morning Snack:</strong> Peanut butter sandwich</li>
-                <li><strong>Lunch:</strong> Chicken adobo, brown rice, steamed vegetables</li>
-                <li><strong>Afternoon Snack:</strong> Apple + yogurt</li>
-                <li><strong>Dinner:</strong> Grilled fish, sweet potato, cucumber salad</li>
-                <li><strong>Hydration:</strong> 8–10 glasses of water + electrolyte drink after training</li>
-              </ul>
-            </div>
-
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 11 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 12 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
           </section>
             </div>
         </div>
@@ -591,42 +649,72 @@ function LandingPage() {
         <div className="book-page">
             <div className='page6-14-content'>
             <section id="week1" class="meal-plan">
-            <div class="day">
-              <h3>Day 25 – Low Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Boiled egg, pandesal with cheese, banana, water</li>
-                <li><strong>Morning Snack:</strong> Oatmeal cookies, milk</li>
-                <li><strong>Lunch:</strong> Grilled tilapia, rice, steamed kangkong, water</li>
-                <li><strong>Afternoon Snack:</strong> Mango slices</li>
-                <li><strong>Dinner:</strong> Chicken tinola, rice, sautéed sayote</li>
-                <li><strong>Hydration:</strong> 7–8 glasses of water</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 26 – Moderate Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Boiled egg, pandesal with cheese, banana, water</li>
-                <li><strong>Morning Snack:</strong> Oatmeal cookies, milk</li>
-                <li><strong>Lunch:</strong> Grilled tilapia, rice, steamed kangkong, water</li>
-                <li><strong>Afternoon Snack:</strong> Mango slices</li>
-                <li><strong>Dinner:</strong> Chicken tinola, rice, sautéed sayote</li>
-                <li><strong>Hydration:</strong> 7–8 glasses of water</li>
-              </ul>
-            </div>
-
-            <div className="day">
-              <h3>Day 27 – High Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
-            </div>
-
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 13 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 14 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
           </section>
             </div>
         </div>
@@ -638,42 +726,611 @@ function LandingPage() {
         <div className="book-page">
             <div className='page6-14-content'>
             <section id="week1" class="meal-plan">
-            <div class="day">
-              <h3>Day 28 – High Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 15 - Low Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Boiled egg, pandesal, hot cocoa</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Oatmeal cookies, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Grilled tilapia, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Mango slices</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>7–8 glasses water</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 16 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </section>
             </div>
-
-            <div className="day">
-              <h3>Day 29 – High Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
+        </div>
+      )
+    },
+    {
+      type: 'page',
+      content: (
+        <div className="book-page">
+            <div className='page6-14-content'>
+            <section id="week1" class="meal-plan">
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 17 - Low Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Boiled egg, pandesal, hot cocoa</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Oatmeal cookies, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Grilled tilapia, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Mango slices</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>7–8 glasses water</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 18 - Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </section>
             </div>
-
-            <div className="day">
-              <h3>Day 30 – High Intensity</h3>
-              <ul>
-              <li><strong>Breakfast:</strong> Fried rice, scrambled eggs, apple, milk</li>
-                <li><strong>Morning Snack:</strong> Trail mix, water</li>
-                <li><strong>Lunch:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Afternoon Snack:</strong> Beef steak, rice, cucumber salad</li>
-                <li><strong>Dinner:</strong> Baked chicken, mashed potatoes, steamed broccoli</li>
-                <li><strong>Hydration:</strong> 10–12 glasses water + sports drink after training</li>
-              </ul>
+        </div>
+      )
+    },
+    {
+      type: 'page',
+      content: (
+        <div className="book-page">
+            <div className='page6-14-content'>
+            <section id="week1" class="meal-plan">
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 19 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 20 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </section>
             </div>
-
+        </div>
+      )
+    },
+    {
+      type: 'page',
+      content: (
+        <div className="book-page">
+            <div className='page6-14-content'>
+            <section id="week1" class="meal-plan">
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 21 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 22 - Low Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Boiled egg, pandesal, hot cocoa</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Oatmeal cookies, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Grilled tilapia, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Mango slices</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>7–8 glasses water</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </section>
+            </div>
+        </div>
+      )
+    },
+    {
+      type: 'page',
+      content: (
+        <div className="book-page">
+            <div className='page6-14-content'>
+            <section id="week1" class="meal-plan">
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 23 - Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 24 - Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </section>
+            </div>
+        </div>
+      )
+    },
+    {
+      type: 'page',
+      content: (
+        <div className="book-page">
+            <div className='page6-14-content'>
+            <section id="week1" class="meal-plan">
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 25 - Low Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Boiled egg, pandesal, hot cocoa</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Oatmeal cookies, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Grilled tilapia, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Mango slices</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>7–8 glasses water</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 26 - Moderate Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Oatmeal, banana, boiled egg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Peanut butter sandwich, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Chicken adobo, brown rice, side salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Apple, yogurt</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>8–10 glasses water + electrolyte drink</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </section>
+            </div>
+        </div>
+      )
+    },
+    {
+      type: 'page',
+      content: (
+        <div className="book-page">
+            <div className='page6-14-content'>
+            <section id="week1" class="meal-plan">
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 27 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 28 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </section>
+            </div>
+        </div>
+      )
+    },
+    {
+      type: 'page',
+      content: (
+        <div className="book-page">
+            <div className='page6-14-content'>
+            <section id="week1" class="meal-plan">
+              <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 29 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="meal-table-1">
+                    <thead>
+                      <tr>
+                      </tr>
+                        <th colSpan="4">Day 30 - High Intensity</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Breakfast</strong></td>
+                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Morning Snack</strong></td>
+                        <td>Trail mix, water</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>Beef steak, rice, cucumber salad</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Afternoon Snack</strong></td>
+                        <td>Peanut butter sandwich</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Dinner</strong></td>
+                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hydration</strong></td>
+                        <td>10–12 glasses water + sports drink after training</td>
+                      </tr>
+                    </tbody>
+                  </table>
           </section>
             </div>
         </div>
