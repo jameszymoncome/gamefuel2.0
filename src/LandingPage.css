@@ -1192,6 +1192,10 @@
   .book-page {
     width: 80%; /* Adjust width to fit smaller screens */
   }
+
+  .meal-table-1 td {
+  font-size: 0.44rem;
+}
   
 }
 
@@ -1213,7 +1217,7 @@
 
   .meal-table th,
   .meal-table td {
-    font-size: 0.7rem; /* Reduce table font size */
+    font-size: 0.55rem; /* Reduce table font size */
     padding: 5px; /* Adjust padding */
   }
 
@@ -1225,6 +1229,10 @@
     font-size: 0.8rem; /* Adjust button font size */
     padding: 8px 15px; /* Adjust padding */
   }
+
+  .meal-table-1 td {
+  font-size: 0.44rem;
+}
 }
 
 .book-page h2 {
@@ -1304,7 +1312,7 @@
 }
 
 .meal-table-1 td {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
 }
 
 .meal-table-1 th:nth-child(4),

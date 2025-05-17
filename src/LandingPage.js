@@ -137,46 +137,52 @@ function LandingPage() {
   )
 },
     {
-      type: 'page',
-      content: (
-        <div className="book-page">
-            <div className='page4-content'>
-                <h2>Scientifically-Backed Dietary Guidelines</h2>
-                    <table className="meal-table">
-                        <thead>
-                        <tr>
-                            <th>Meal Timing</th>
-                            <th>What to Eat</th>
-                            <th>Why It Matters</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>2–4 hrs before training</td>
-                            <td>Carbs + protein (e.g., rice + egg)</td>
-                            <td>Fuel energy stores</td>
-                        </tr>
-                        <tr>
-                            <td>30–60 min before</td>
-                            <td>Light carbs (banana, granola bar)</td>
-                            <td>Quick energy</td>
-                        </tr>
-                        <tr>
-                            <td>During (if &gt;60 min)</td>
-                            <td>Water or electrolyte drink</td>
-                            <td>Maintain hydration</td>
-                        </tr>
-                        <tr>
-                            <td>Post-Training (within 30 mins)</td>
-                            <td>Protein + carbs (chocolate milk, sandwich)</td>
-                            <td>Muscle recovery</td>
-                        </tr>
-                        </tbody>
-                    </table>
-            </div>
+  type: 'page',
+  content: (
+    <div className="book-page">
+      <div className='page4-content'>
+        <h2>Scientifically-Backed Dietary Guidelines</h2>
+        <table className="meal-table">
+          <thead>
+            <tr>
+              <th>Meal Timing</th>
+              <th>What to Eat</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2–4 hrs before training</td>
+              <td>Carbs + protein (e.g., rice + egg)</td>
+              <td>Fuel energy stores</td>
+            </tr>
+            <tr>
+              <td>30–60 min before</td>
+              <td>Light carbs (banana, granola bar)</td>
+              <td>Quick energy</td>
+            </tr>
+            <tr>
+              <td>During (if &gt;60 min)</td>
+              <td>Water or electrolyte drink</td>
+              <td>Maintain hydration</td>
+            </tr>
+            <tr>
+              <td>Post-Training (within 30 mins)</td>
+              <td>Protein + carbs (chocolate milk, sandwich)</td>
+              <td>Muscle recovery</td>
+            </tr>
+          </tbody>
+        </table>
+        {/* Add the intensity breakdown below the table */}
+        <div style={{ marginTop: '18px', textAlign: 'left', fontSize: '0.7rem', lineHeight: '1.5' }}>
+          <strong>High-intensity:</strong> Higher carbohydrates (60-70%), moderate protein (15-20%), moderate healthy fats (15-20%).<br />
+          <strong>Moderate-intensity:</strong> Balanced (50-60% carbs, 20-25% protein, 20-25% fats).<br />
+          <strong>Low-intensity/rest:</strong> Lower carbohydrates (40-50%), higher protein (25-30%), moderate fats (20-25%).
         </div>
-      )
-    },
+      </div>
+    </div>
+  )
+},
     {
       type: 'page',
       content: (
@@ -189,32 +195,32 @@ function LandingPage() {
                     <thead>
                       <tr>
                       </tr>
-                        <th colSpan="4">Day 1 - Moderate Intensity</th>
+                        <th colSpan="4">Day 1 - High Intensity</th>
                     </thead>
                     <tbody>
                       <tr>
                         <td><strong>Breakfast</strong></td>
-                        <td>Oatmeal, banana, boiled egg</td>
+                        <td>Ginisang munggo with rice, a banana, and a glass of milk.</td>
                       </tr>
                       <tr>
                         <td><strong>Morning Snack</strong></td>
-                        <td>Peanut butter sandwich, water</td>
+                        <td>Small banana with a handful of peanuts.</td>
                       </tr>
                       <tr>
                         <td><strong>Lunch</strong></td>
-                        <td>Chicken adobo, brown rice, side salad</td>
+                        <td>Kinunot (fish stew) with rice, and a side of kangkong (water spinach).</td>
                       </tr>
                       <tr>
                         <td><strong>Afternoon Snack</strong></td>
-                        <td>Apple, yogurt</td>
+                        <td>Rice cakes with a small amount of cheese.</td>
                       </tr>
                       <tr>
                         <td><strong>Dinner</strong></td>
-                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                        <td>Laing (taro leaves in coconut milk) with rice and grilled chicken.</td>
                       </tr>
                       <tr>
                         <td><strong>Hydration</strong></td>
-                        <td>8–10 glasses water + electrolyte drink</td>
+                        <td>Water throughout the day; coconut water after training.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -228,27 +234,27 @@ function LandingPage() {
                     <tbody>
                       <tr>
                         <td><strong>Breakfast</strong></td>
-                        <td>Oatmeal, banana, boiled egg</td>
+                        <td>Pan de sal with cheese and a glass of milk.</td>
                       </tr>
                       <tr>
                         <td><strong>Morning Snack</strong></td>
-                        <td>Peanut butter sandwich, water</td>
+                        <td>Hard-boiled egg.</td>
                       </tr>
                       <tr>
                         <td><strong>Lunch</strong></td>
-                        <td>Chicken adobo, brown rice, side salad</td>
+                        <td>Bicol Express (pork stew) with rice and a small side salad.</td>
                       </tr>
                       <tr>
                         <td><strong>Afternoon Snack</strong></td>
-                        <td>Apple, yogurt</td>
+                        <td>A piece of fruit (e.g., mango).</td>
                       </tr>
                       <tr>
                         <td><strong>Dinner</strong></td>
-                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                        <td>Inihaw na isda (grilled fish) with rice and steamed vegetables.</td>
                       </tr>
                       <tr>
                         <td><strong>Hydration</strong></td>
-                        <td>8–10 glasses water + electrolyte drink</td>
+                        <td>Water; consider electrolyte drink after training.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -267,32 +273,32 @@ function LandingPage() {
                     <thead>
                       <tr>
                       </tr>
-                        <th colSpan="4">Day 3 - Moderate Intensity</th>
+                        <th colSpan="4">Day 3 - Low Intensity</th>
                     </thead>
                     <tbody>
                       <tr>
                         <td><strong>Breakfast</strong></td>
-                        <td>Oatmeal, banana, boiled egg</td>
+                        <td>Oatmeal with milk and sliced bananas.</td>
                       </tr>
                       <tr>
                         <td><strong>Morning Snack</strong></td>
-                        <td>Peanut butter sandwich, water</td>
+                        <td>Yogurt.</td>
                       </tr>
                       <tr>
                         <td><strong>Lunch</strong></td>
-                        <td>Chicken adobo, brown rice, side salad</td>
+                        <td>Chicken adobo with rice and atchara (pickled papaya).</td>
                       </tr>
                       <tr>
                         <td><strong>Afternoon Snack</strong></td>
-                        <td>Apple, yogurt</td>
+                        <td>A small handful of mixed nuts and seeds.</td>
                       </tr>
                       <tr>
                         <td><strong>Dinner</strong></td>
-                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                        <td>Sinigang (sour soup) with rice and a side of tofu.</td>
                       </tr>
                       <tr>
                         <td><strong>Hydration</strong></td>
-                        <td>8–10 glasses water + electrolyte drink</td>
+                        <td>Water.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -300,32 +306,32 @@ function LandingPage() {
                     <thead>
                       <tr>
                       </tr>
-                        <th colSpan="4">Day 4 - Moderate Intensity</th>
+                        <th colSpan="4">Day 4 - High Intensity</th>
                     </thead>
                     <tbody>
                       <tr>
                         <td><strong>Breakfast</strong></td>
-                        <td>Oatmeal, banana, boiled egg</td>
+                        <td>Ginisang munggo with rice, a banana, and a glass of milk.</td>
                       </tr>
                       <tr>
                         <td><strong>Morning Snack</strong></td>
-                        <td>Peanut butter sandwich, water</td>
+                        <td>Small banana with a handful of peanuts.</td>
                       </tr>
                       <tr>
                         <td><strong>Lunch</strong></td>
-                        <td>Chicken adobo, brown rice, side salad</td>
+                        <td>Kinunot (fish stew) with rice, and a side of kangkong (water spinach).</td>
                       </tr>
                       <tr>
                         <td><strong>Afternoon Snack</strong></td>
-                        <td>Apple, yogurt</td>
+                        <td>Rice cakes with a small amount of cheese.</td>
                       </tr>
                       <tr>
                         <td><strong>Dinner</strong></td>
-                        <td>Grilled fish, sweet potato, steamed veggies</td>
+                        <td>Laing (taro leaves in coconut milk) with rice and grilled chicken.</td>
                       </tr>
                       <tr>
                         <td><strong>Hydration</strong></td>
-                        <td>8–10 glasses water + electrolyte drink</td>
+                        <td>Water throughout the day; coconut water after training.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -345,32 +351,32 @@ function LandingPage() {
                     <thead>
                       <tr>
                       </tr>
-                        <th colSpan="4">Day 5 - Low Intensity</th>
+                        <th colSpan="4">Day 5 - Moderate Intensity</th>
                     </thead>
                     <tbody>
                       <tr>
                         <td><strong>Breakfast</strong></td>
-                        <td>Boiled egg, pandesal, hot cocoa</td>
+                        <td>Pan de sal with cheese and a glass of milk.</td>
                       </tr>
                       <tr>
                         <td><strong>Morning Snack</strong></td>
-                        <td>Oatmeal cookies, water</td>
+                        <td>Hard-boiled egg.</td>
                       </tr>
                       <tr>
                         <td><strong>Lunch</strong></td>
-                        <td>Grilled tilapia, rice, cucumber salad</td>
+                        <td>Bicol Express (pork stew) with rice and a small side salad.</td>
                       </tr>
                       <tr>
                         <td><strong>Afternoon Snack</strong></td>
-                        <td>Mango slices</td>
+                        <td>A piece of fruit (e.g., mango).</td>
                       </tr>
                       <tr>
                         <td><strong>Dinner</strong></td>
-                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                        <td>Inihaw na isda (grilled fish) with rice and steamed vegetables.</td>
                       </tr>
                       <tr>
                         <td><strong>Hydration</strong></td>
-                        <td>7–8 glasses water</td>
+                        <td>Water; consider electrolyte drink after training.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -378,32 +384,32 @@ function LandingPage() {
                     <thead>
                       <tr>
                       </tr>
-                        <th colSpan="4">Day 6 - High Intensity</th>
+                        <th colSpan="4">Day 6 - Rest</th>
                     </thead>
                     <tbody>
                       <tr>
                         <td><strong>Breakfast</strong></td>
-                        <td>Fried rice, scrambled eggs, apple, milk</td>
+                        <td>Oatmeal with milk and sliced bananas.</td>
                       </tr>
                       <tr>
                         <td><strong>Morning Snack</strong></td>
-                        <td>Trail mix, water</td>
+                        <td>Yogurt.</td>
                       </tr>
                       <tr>
                         <td><strong>Lunch</strong></td>
-                        <td>Beef steak, rice, cucumber salad</td>
+                        <td>Chicken adobo with rice and atchara (pickled papaya).</td>
                       </tr>
                       <tr>
                         <td><strong>Afternoon Snack</strong></td>
-                        <td>Peanut butter sandwich</td>
+                        <td>A small handful of mixed nuts and seeds.</td>
                       </tr>
                       <tr>
                         <td><strong>Dinner</strong></td>
-                        <td>Baked chicken, mashed potatoes, steamed broccoli</td>
+                        <td>Sinigang (sour soup) with rice and a side of tofu.</td>
                       </tr>
                       <tr>
                         <td><strong>Hydration</strong></td>
-                        <td>10–12 glasses water + sports drink after training</td>
+                        <td>Water.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -427,27 +433,27 @@ function LandingPage() {
                     <tbody>
                       <tr>
                         <td><strong>Breakfast</strong></td>
-                        <td>Boiled egg, pandesal, hot cocoa</td>
+                        <td>Pancakes or waffles with fruit and a small amount of syrup.</td>
                       </tr>
                       <tr>
                         <td><strong>Morning Snack</strong></td>
-                        <td>Oatmeal cookies, water</td>
+                        <td>Fruit salad.</td>
                       </tr>
                       <tr>
                         <td><strong>Lunch</strong></td>
-                        <td>Grilled tilapia, rice, cucumber salad</td>
+                        <td>Leftovers or a sandwich with lean protein and vegetables.</td>
                       </tr>
                       <tr>
                         <td><strong>Afternoon Snack</strong></td>
-                        <td>Mango slices</td>
+                        <td>Popcorn (air-popped).</td>
                       </tr>
                       <tr>
                         <td><strong>Dinner</strong></td>
-                        <td>Chicken tinola (soup with green papaya and spinach)</td>
+                        <td>Pasta with vegetables and lean ground meat.</td>
                       </tr>
                       <tr>
                         <td><strong>Hydration</strong></td>
-                        <td>7–8 glasses water</td>
+                        <td>Water.</td>
                       </tr>
                     </tbody>
                   </table>
