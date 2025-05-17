@@ -1462,7 +1462,7 @@ function LandingPage() {
       />
       <h2 className="ty">Thank You for Reading!</h2>
       <a
-        href="/EBOOK-GAMEFUEL.pdf"
+        href="/EBOOK.pdf"
         download="GameFuel_Ebook.pdf"
         target="_blank"
         rel="noopener noreferrer"
