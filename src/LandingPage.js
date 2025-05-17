@@ -1456,7 +1456,7 @@ function LandingPage() {
   content: (
     <div className="book-page">
       <img 
-        src="/images/gamefuelbk.jpg" 
+        src="/images/gamefuelbook.jpg" 
         alt="Thank You" 
         width={300}
       />
