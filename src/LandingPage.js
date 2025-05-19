@@ -5,6 +5,57 @@ function LandingPage() {
   const [page, setPage] = useState(0); // 0 = cover, 1 = title, etc.
   const [direction, setDirection] = useState(''); // '' | 'next' | 'prev'
 
+  const [isMobile, setIsMobile] = React.useState(false);
+  
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    // Initial check
+    checkMobile();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkMobile);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const nutritionStyles = {
+    contentSection: {
+      marginTop: '18px',
+      textAlign: 'left',
+      fontSize: isMobile ? '0.65rem' : '0.7rem',
+      lineHeight: '1.5'
+    },
+    row: {
+      display: 'flex',
+      flexDirection: isMobile ? 'column' : 'row',
+      marginBottom: isMobile ? '12px' : '8px'
+    },
+    label: {
+      width: isMobile ? '100%' : '120px',
+      fontWeight: 'bold',
+      paddingRight: '6px',
+      marginBottom: isMobile ? '2px' : '0'
+    },
+    highIntensity: {
+      color: '#e07a5f' /* Coral/orange - high energy */
+    },
+    moderateIntensity: {
+      color: '#81b29a' /* Sage green - balanced */
+    },
+    lowIntensity: {
+      color: '#3d405b' /* Deep blue - rest/recovery */
+    },
+    description: {
+      flex: '1'
+    }
+  };
+
+  
+
   const pages = [
     {
       type: 'cover',
@@ -174,10 +225,21 @@ function LandingPage() {
           </tbody>
         </table>
         {/* Add the intensity breakdown below the table */}
-        <div style={{ marginTop: '18px', textAlign: 'left', fontSize: '0.7rem', lineHeight: '1.5' }}>
-          <strong>High-intensity:</strong> Higher carbohydrates (60-70%), moderate protein (15-20%), moderate healthy fats (15-20%).<br />
-          <strong>Moderate-intensity:</strong> Balanced (50-60% carbs, 20-25% protein, 20-25% fats).<br />
-          <strong>Low-intensity/rest:</strong> Lower carbohydrates (40-50%), higher protein (25-30%), moderate fats (20-25%).
+        <div className="page4-content-add" style={nutritionStyles.contentSection}>
+          <div style={nutritionStyles.row}>
+            <span style={{...nutritionStyles.label, ...nutritionStyles.highIntensity}}>High-intensity:</span>
+            <span style={nutritionStyles.description}>Higher carbohydrates (60-70%), moderate protein (15-20%), moderate healthy fats (15-20%)</span>
+          </div>
+          
+          <div style={nutritionStyles.row}>
+            <span style={{...nutritionStyles.label, ...nutritionStyles.moderateIntensity}}>Moderate-intensity:</span>
+            <span style={nutritionStyles.description}>Balanced (50-60% carbs, 20-25% protein, 20-25% fats)</span>
+          </div>
+          
+          <div style={nutritionStyles.row}>
+            <span style={{...nutritionStyles.label, ...nutritionStyles.lowIntensity}}>Low-intensity/rest:</span>
+            <span style={nutritionStyles.description}>Lower carbohydrates (40-50%), higher protein (25-30%), moderate fats (20-25%)</span>
+          </div>
         </div>
       </div>
     </div>
